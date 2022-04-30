@@ -1,0 +1,55 @@
+<div class="header d__flex just-s">
+  <p class="title m-0">Person Detail</p>
+  <ion-button fill="clear" size="small" class="close_button" (click)="close()">
+     <ion-icon name="close"></ion-icon>
+     <p class="m-0">close</p>
+   </ion-button >
+</div>
+
+<div class="forms">
+  <form [formGroup]="insert_form">
+    
+    <div class="cutomer_input">
+     <label>Name</label>
+     <div class="input">
+       <ion-input formControlName="name" type="text" placeholder="Enter a name"></ion-input>
+     </div>
+     <p class="error m-0" *ngIf="submitted && name.errors?.['required']">Name is required</p>
+    </div> 
+
+    <div class="cutomer_input">
+      <label>E-mail</label>
+      <div class="input">
+        <ion-input formControlName="email" type="text" placeholder="Enter your email"></ion-input>
+      </div>
+      <p class="error m-0" *ngIf="submitted && email.errors?.['required']">email is required</p>
+      <p class="error m-0" *ngIf="submitted &&  email.errors?.['email']">Enter a valid email address</p>
+     </div> 
+
+     <div class="cutomer_input">
+      <label>Phone</label>
+      <div class="input">
+        <ion-input formControlName="phone" type="text" placeholder="Enter a phone number"></ion-input>
+      </div>
+      <p class="error m-0" *ngIf="submitted && phone.errors?.['required']">phone is required</p>
+      <p class="error m-0" *ngIf="submitted &&  phone.errors?.pattern">Enter a valid phone number</p>
+     </div> 
+
+     <div class="cutomer_input">
+      <label>DOB</label>
+      <div class="input input_date">
+        <ion-input formControlName="dob"  type="date" ></ion-input>
+      </div>
+      <p class="error m-0" *ngIf="submitted && dob.errors?.['required']">DOB is required</p>
+     </div> 
+
+     <div class="cutomer_input">
+      <label>Address</label>
+      <div class="input">
+        <ion-input formControlName="address" type="text" placeholder="Enter your address"></ion-input>
+      </div>
+      <p class="error m-0" *ngIf="submitted && address.errors?.['required']">Address is required</p>
+     </div> 
+  </form>
+  <ion-button class="submit_button" (click)="submit()">sumbit</ion-button>
+</div>

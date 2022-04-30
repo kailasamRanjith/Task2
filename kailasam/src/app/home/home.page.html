@@ -1,0 +1,32 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content [fullscreen]="true">
+ 
+<div class="full d__flex" [class.cotainer1]="db.details || db.insert">
+  
+  <div class="container">
+    <div class="d__flex box1">
+     <a href="https://youtu.be/8FAUEv_E_xQ"  target="_blank" class="h5 mouse">Google</a>
+     <div class="search w-100 d__flex">
+       <ion-input class="input w-100" type="text" (ionChange)="search($event)" placeholder="Enter your id" ></ion-input>
+     </div>
+     <div class="d__flex">
+       <p class="m-0 click_register">Click here to </p>
+       <p class="m-0 click_insert mouse" (click)="insert()" >Insert</p>
+     </div>
+    </div> 
+  </div>
+
+  <div *ngIf="db.details" class="person_det">
+      <app-person-details [details]="search_value"></app-person-details>
+  </div>
+
+</div>
+
+</ion-content>

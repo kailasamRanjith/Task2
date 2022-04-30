@@ -1,0 +1,70 @@
+.header{
+    background: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    // padding: 10px;
+      .title{
+          color: #000;
+          font-size: 18px;
+          font-weight: 600;
+      }
+
+    .close_button{
+        color: #000;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: capitalize;
+        border-radius: 5px;
+        background: #f1f1f1;
+        ion-icon{
+            color: #000;
+        }
+    }
+    
+}
+
+.cutomer_input{
+    padding: 10px;
+    label{
+        color: #000;
+        padding: 5px;;
+        font-size: 12px;
+    }
+    .input{
+        color: #222;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        // margin: 10px;
+    }
+}
+
+
+.error{
+    font-size: 10px;
+    color: red;
+    background: #ff00001a;
+    padding: m;
+    margin: 5px;
+}
+
+.forms{
+    height: 100vh;
+    overflow: auto;
+}
+
+.submit_button{
+    --background: green;
+    margin: 10px;
+}    
+
+
+.md-datepicker-button {
+    background: red !important;
+  }
+
+.input_date{
+    background: #ddd;
+    ion-input{
+        --padding-end: 10px;
+    }
+}

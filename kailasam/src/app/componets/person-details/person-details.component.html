@@ -1,0 +1,46 @@
+
+
+<div *ngIf="details" class="detail_container">
+
+  <div class="header d__flex just-s">
+    <p class="title m-0">Person Detail</p>
+    <ion-button fill="clear" size="small" class="close_button" (click)="close()">
+       <ion-icon name="close"></ion-icon>
+       <p class="m-0">close</p>
+     </ion-button >
+  </div>
+
+ <div  class="container">
+  <div class="box d__flex">
+    <ion-icon name="person-outline"></ion-icon>
+    <p class="p">{{details[0]}}</p>
+  </div>
+
+  <div class="box d__flex">
+    <ion-icon name="mail-outline"></ion-icon>
+    <p class="p">{{details[1]}}</p>
+  </div>
+
+  <div class="box d__flex">
+    <ion-icon name="call-outline"></ion-icon>
+    <p class="p">{{details[2]}}</p>
+  </div>
+
+  <div class="box d__flex">
+    <ion-icon name="calendar-outline"></ion-icon>
+    <p class="p">{{details[3]}}</p>
+  </div>
+
+  <div class="box d__flex">
+    <ion-icon name="home-outline"></ion-icon>
+    <p class="p">{{details[4]}}</p>
+  </div>
+   
+
+ </div>
+</div> 
+
+<div *ngIf="!details" class="detail_container d__flex no_datas">
+   <ion-icon name="alert-circle-outline"></ion-icon>
+   <p class="m-0 no_data">Sorry...! No Data Found</p>
+</div>

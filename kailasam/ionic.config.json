@@ -1,0 +1,7 @@
+{
+  "name": "kailasam",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

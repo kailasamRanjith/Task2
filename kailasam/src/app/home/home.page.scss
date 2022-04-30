@@ -1,0 +1,100 @@
+// #container {
+//   text-align: center;
+
+//   position: absolute;
+//   left: 0;
+//   right: 0;
+//   top: 50%;
+//   transform: translateY(-50%);
+// }
+
+// #container strong {
+//   font-size: 20px;
+//   line-height: 26px;
+// }
+
+// #container p {
+//   font-size: 16px;
+//   line-height: 22px;
+
+//   color: #8c8c8c;
+
+//   margin: 0;
+// }
+
+// #container a {
+//   text-decoration: none;
+// }
+
+.cotainer1{
+  transition: 2s;
+  .container{
+     flex: 0 0 60% !important; 
+  }
+  .person_det{
+    background: green;
+    flex: 0 0 40%;
+  }
+}
+
+.container{
+  flex: 0 0 100%;
+  justify-content: center;
+  height: 100vh;
+  background: green;
+  display: flex;
+  align-items: center;
+  .h5{
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+    margin: 0;
+    color: #fff;
+    font-style: italic;
+    text-decoration: none;
+  }
+}
+
+.box1{
+  flex-direction: column;
+}
+
+
+.search{
+  .input{
+    height: 35px;
+    background: #fff;
+    color: #000;
+    margin: 10px 0;
+    padding-left: 10px; 
+    border-radius: 15px;
+    border: 1px solid #f1f1f1;
+  }
+}
+
+.click_register{
+  font-size: 12px;
+  padding-right: 5px;
+  color: #fff;
+}
+
+.click_insert{
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+}
+
+@media only screen and (max-width:768px){
+  .cotainer1{
+    flex-direction: column;
+    height: 100vh;
+    .container{
+      width: 100% !important;
+    }
+    .person_det{
+      background: green;
+       width: 100%;
+    }
+  }
+}
+
