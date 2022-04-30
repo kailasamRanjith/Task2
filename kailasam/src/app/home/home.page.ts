@@ -38,9 +38,4 @@ export class HomePage  implements OnInit {
       return await modal.present();
     }
   
-
-  data=[
-    {'name' : 'kailasam','email':'kailasamkp1998@gmail.com','phone_no':'7010707683'}
-  ]
-
 }
